@@ -41,7 +41,7 @@ function hdq_load_question_tabs()
 				<div id="hdq_logo">
 					<span class="hdq_logo_tooltip"><img src="<?php echo plugins_url('../images/hd-logo.png', __FILE__); ?>" alt = "Harmonic Design logo">
 						<span class="hdq_logo_tooltip_content">
-                        <span><strong>HD Quiz</strong> is developed by Harmonic Design. Check out the addons page to see how you can extend HD Quiz even further.</span>
+                        <span><strong>ICN Academy</strong> is developed by Harmonic Design. Check out the addons page to see how you can extend ICN Academy even further.</span>
                     	</span>
 					</span>
 				</div>

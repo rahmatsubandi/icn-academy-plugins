@@ -27,7 +27,7 @@ function hdq_register_tools_csv_importer_page_callback()
 	<div id="main" style="max-width: 800px; background: #f3f3f3; border: 1px solid #ddd; margin-top: 2rem">
 		<div id="header">
 			<h1 id="heading_title" style="margin-top:0">
-				HD Quiz - Bulk Question Importer
+				ICN Academy - Bulk Question Importer
 			</h1>
 		</div>
 		<div <?php if ($line !== 0) {

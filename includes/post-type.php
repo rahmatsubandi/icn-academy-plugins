@@ -1,6 +1,6 @@
 <?php
 /*
-    * Create HD Quiz custom post type and taxonomy
+    * Create ICN Academy custom post type and taxonomy
     - NOTE: Wish I didn't name the CPT something so stupid
 */
 
@@ -10,9 +10,9 @@ function hdq_cpt_quizzes()
 {
     $labels = array(
             'name'                => _x('Questions', 'Post Type General Name', 'text_domain'),
-            'singular_name'       => _x('HD Quiz', 'Post Type Singular Name', 'text_domain'),
-            'menu_name'           => __('HD Quiz', 'text_domain'),
-            'name_admin_bar'      => __('HD Quiz', 'text_domain'),
+            'singular_name'       => _x('ICN Academy', 'Post Type Singular Name', 'text_domain'),
+            'menu_name'           => __('ICN Academy', 'text_domain'),
+            'name_admin_bar'      => __('ICN Academy', 'text_domain'),
             'parent_item_colon'   => __('Parent Question:', 'text_domain'),
             'all_items'           => __('All Questions', 'text_domain'),
             'add_new_item'        => __('Add New Question', 'text_domain'),
@@ -26,7 +26,7 @@ function hdq_cpt_quizzes()
             'not_found_in_trash'  => __('Not found in Trash', 'text_domain'),
         );
     $args = array(
-            'label'               => __('HD Quiz', 'text_domain'),
+            'label'               => __('ICN Academy', 'text_domain'),
             'description'         => __('Post Type Description', 'text_domain'),
             'labels'              => $labels,
             'supports'            => array( 'title', 'thumbnail','quiz'),
@@ -35,7 +35,7 @@ function hdq_cpt_quizzes()
             'show_ui'             => true,
             'show_in_menu'        => false,
             'menu_position'       => 5,
-            'menu_icon'           => 'dashicons-clipboard',
+            'menu_icon'           => 'dashicons-welcome-learn-more',
             'show_in_admin_bar'   => false,
             'show_in_nav_menus'   => false,
             'can_export'          => true,
@@ -144,5 +144,5 @@ add_action( 'add_meta_boxes', 'hdq_cpt_question_meta_notice' );
 
 function hdq_question_meta_notice()
 {
-	echo '<p>the ablity to modify question data from here has been depricated since HD Quiz 1.6, and removed since HD Quiz 1.8. The bulk question edit page still exists so that you can easily delete questions in bulk, or add questions to quizzes in bulk.</p>';
+	echo '<p>the ablity to modify question data from here has been depricated since ICN Academy 1.6, and removed since ICN Academy 1.8. The bulk question edit page still exists so that you can easily delete questions in bulk, or add questions to quizzes in bulk.</p>';
 }

@@ -40,7 +40,7 @@ function hdq_register_tools__data_upgrade_page_callback()
             </h1>
         </div>
 
-        <p>HD Quiz has grown considerably in features and complexity over the years making this page necessary. This tool is only needed for users upgrading from HD Quiz 1.7 or lower. <strong>DO NOT USE if you are upgrading from a version higher than 1.7</strong></p>
+        <p>ICN Academy has grown considerably in features and complexity over the years making this page necessary. This tool is only needed for users upgrading from ICN Academy 1.7 or lower. <strong>DO NOT USE if you are upgrading from a version higher than 1.7</strong></p>
 		<p>
 			
 		</p>
@@ -50,7 +50,7 @@ function hdq_register_tools__data_upgrade_page_callback()
 
                 <strong>NOTE:</strong> If for any reason, the data migration is not working, <strong>do no
                     worry</strong>. None of your old data has been deleted or modified in any way. In fact, you can
-                easily replace this version of HD Quiz by downloading the <a href="https://wordpress.org/plugins/hd-quiz/advanced/" target="_blank">previous version of HD Quiz
+                easily replace this version of ICN Academy by downloading the <a href="https://wordpress.org/plugins/hd-quiz/advanced/" target="_blank">previous version of ICN Academy
                     here</a> <span class="hdq_tooltip">
                     ?
                     <span class="hdq_tooltip_content">
@@ -67,7 +67,7 @@ function hdq_register_tools__data_upgrade_page_callback()
             Upgrades will happen in two steps. The first step will be updating your quiz settings to the new version. Once that's done, the same will happen to all of your questions. <strong><u>DO NOT LEAVE THIS PAGE</u></strong> until the update has completed. The time it will take to update depends on how fast your server is and also how many questions need to be updated.
         </p>
         <p>
-            Thank you for your patience and understanding. Needing to change data like this is hopefully a once in a lifetime event for HD Quiz. This new method opens up a lot of doors to increase speed, security, and feature set of HD Quiz.
+            Thank you for your patience and understanding. Needing to change data like this is hopefully a once in a lifetime event for ICN Academy. This new method opens up a lot of doors to increase speed, security, and feature set of ICN Academy.
         </p>
         <center>
             <div data-quizzes="<?php echo $quizzes; ?>" data-questions="<?php echo $questions; ?>" id="hdq_tool_update_data_start" class="hdq_button" role="button" title="Start update">
@@ -335,7 +335,7 @@ function hdq_show_need_to_update_data_message()
         return;
     } ?>
     <div class="notice notice-error" style="background: darkred; color:#fff;">
-        <p style="text-align:center;"><strong>HD QUIZ</strong>. You need to update your quizzes and questions to be compatible with this version. <a href="<?php echo get_admin_url(null, "?page=hdq_tools_data_upgrade"); ?>" class="button" style="font-weight: bold">BEGIN UPDATE</a></p>
+        <p style="text-align:center;"><strong>ICN Academy</strong>. You need to update your quizzes and questions to be compatible with this version. <a href="<?php echo get_admin_url(null, "?page=hdq_tools_data_upgrade"); ?>" class="button" style="font-weight: bold">BEGIN UPDATE</a></p>
     </div>
 <?php
 }

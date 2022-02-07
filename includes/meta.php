@@ -334,7 +334,7 @@ function hdq_get_settings_meta()
 					"type": "checkbox",
 					"name": "hd_qu_percent",
 					"label": "Enable Percent Results",
-					"tooltip": "By default, HD Quiz will only show the score as a fraction (example: 9/10). Enabling this will also show the score as a percentage (example: 90%)",
+					"tooltip": "By default, ICN Academy will only show the score as a fraction (example: 9/10). Enabling this will also show the score as a percentage (example: 90%)",
 					"options": [
 						{
 							"label": "",
@@ -351,7 +351,7 @@ function hdq_get_settings_meta()
 					"type": "checkbox",
 					"name": "hd_qu_legacy_scroll",
 					"label": "Enable Legacy Scroll",
-					"tooltip": "HD Quiz <code>1.8.2</code> introduced a new scroll function that <em>should</em> be far faster and more compatible. If you are having issues with the auto scroll functionalty, enable this to use the older version",
+					"tooltip": "ICN Academy <code>1.8.2</code> introduced a new scroll function that <em>should</em> be far faster and more compatible. If you are having issues with the auto scroll functionalty, enable this to use the older version",
 					"options": [
 						{
 							"label": "",
@@ -362,8 +362,8 @@ function hdq_get_settings_meta()
 				{
 					"type": "checkbox",
 					"name": "hd_qu_heart",
-					"label": "I ❤️ HD Quiz",
-					"tooltip": "If enabled, each quiz will contain a subtle link letting users know that the quizzes are powered by HD Quiz. The link is unobtrusive and is only visible once a user has completed a quiz.",
+					"label": "I ❤️ ICN Academy",
+					"tooltip": "If enabled, each quiz will contain a subtle link letting users know that the quizzes are powered by ICN Academy. The link is unobtrusive and is only visible once a user has completed a quiz.",
 					"options": [
 						{
 							"label": "",
@@ -383,7 +383,7 @@ function hdq_get_settings_meta()
 		{
 			"type": "content",
 			"name": "adset_content",
-			"value": "<p><strong>DO NOT USE</strong> if you are already displaying auto ads on your site. HD Quiz will place the ad code after every 5th question.</p>"
+			"value": "<p><strong>DO NOT USE</strong> if you are already displaying auto ads on your site. ICN Academy will place the ad code after every 5th question.</p>"
 		}
 	],
 	"translate": [
@@ -542,7 +542,7 @@ function hdq_get_quiz_meta()
 		{
 			"type": "content",
 			"name": "timer_content_descriptor",
-			"value": "<p>If the timer is enabled,the quiz will be hidden behind a \"START QUIZ\" button. You can rename this button from the HD Quiz -> About / Options page</p>"
+			"value": "<p>If the timer is enabled,the quiz will be hidden behind a \"START QUIZ\" button. You can rename this button from the ICN Academy -> About / Options page</p>"
 		},
 		{
 			"type": "col-1-1",

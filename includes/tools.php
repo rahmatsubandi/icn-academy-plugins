@@ -26,12 +26,12 @@ wp_enqueue_script(
 <div id="main" style="max-width: 800px; background: #f3f3f3; border: 1px solid #ddd; margin-top: 2rem">
 	<div id="header">
 		<h1 id="heading_title" style="margin-top:0">
-			HD Quiz - Tools
+			ICN Academy - Tools
 		</h1>
 	</div>
 
 
-	<p>HD Quiz has grown considerably in features and complexity over the years making this page necessary. Most of you
+	<p>ICN Academy has grown considerably in features and complexity over the years making this page necessary. Most of you
 		will never need to use any of the tools on this page, but these tools are still here to help you out when
 		needed.</p>
 
@@ -39,16 +39,16 @@ wp_enqueue_script(
 		<div>
 			<h4>Quiz and Question Data Updater</h4>
 			<p>
-				<small>This tool is only needed for users upgrading from HD Quiz 1.7 or lower.<br/><strong>DO NOT USE if you are upgrading from a version higher than 1.7</strong></small>
+				<small>This tool is only needed for users upgrading from ICN Academy 1.7 or lower.<br/><strong>DO NOT USE if you are upgrading from a version higher than 1.7</strong></small>
 			</p>
 
 			<div class="hdq_accordion">
 				<h3>What does this tool do?</h3>
 				<div style="display: none;">
 					<p>
-						Since HD Quiz 1.8, quiz and question data is saved and retrieved in a completely new way. For
+						Since ICN Academy 1.8, quiz and question data is saved and retrieved in a completely new way. For
 						those of you with less than 200 questions on your site, the data migration and upgrade should
-						have happened automatically when you upgraded HD Quiz.
+						have happened automatically when you upgraded ICN Academy.
 					</p>
 					<p>
 						However, if you have more than 200 questions, or the automatic update did not work for whatever
@@ -60,8 +60,8 @@ wp_enqueue_script(
 			<p>
 				<strong>NOTE:</strong> If the data migration does not work for any reason, <strong>do no
 					worry</strong>. None of your old data has been deleted or modified in any way. In fact, you can
-				easily replace this version of HD Quiz by downloading the <a
-					href="https://wordpress.org/plugins/hd-quiz/advanced/" target="_blank">previous version of HD Quiz
+				easily replace this version of ICN Academy by downloading the <a
+					href="https://wordpress.org/plugins/hd-quiz/advanced/" target="_blank">previous version of ICN Academy
 					here</a> <span class="hdq_tooltip">
 					?
 					<span class="hdq_tooltip_content">
@@ -95,7 +95,7 @@ wp_enqueue_script(
 			</div>
 
 			<p>
-				<strong>NOTE:</strong> It is YOUR responsibility to ensure that your CSV is properly formatted. Due to the almost infinte ways that a CSV can be inproperly formatted for HD Quiz, I can only offer a very limited support to help with any issues arising from this feature.
+				<strong>NOTE:</strong> It is YOUR responsibility to ensure that your CSV is properly formatted. Due to the almost infinte ways that a CSV can be inproperly formatted for ICN Academy, I can only offer a very limited support to help with any issues arising from this feature.
 			</p>
 		</div>
 		<a href = "<?php echo get_admin_url(null, "?page=hdq_tools_csv_importer"); ?>" class="hdq_button" role="button" title="init tool">

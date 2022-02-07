@@ -1,11 +1,11 @@
 <?php
 /*
-    * Plugin Name: HD Quiz
-    * Description: HD Quiz allows you to easily add an unlimited amount of Quizzes to your site.
-    * Plugin URI: https://harmonicdesign.ca/hd-quiz/
-    * Author: Harmonic Design
-    * Author URI: https://harmonicdesign.ca
-    * Version: 1.8.4
+    * Plugin Name: ICN Academy
+    * Description: ICN Academy is a platform for people who are or are learning Crypto.
+    * Plugin URI: https://indonesiacrypto.network
+    * Author: ICN Coinvestasi
+    * Author URI: https://coinvestasi.com
+    * Version: 1.8.5
 */
 
 
@@ -29,7 +29,7 @@ require dirname(__FILE__) . '/includes/post-type.php'; // custom post types
 require dirname(__FILE__) . '/includes/meta.php'; // custom meta
 require dirname(__FILE__) . '/includes/functions.php'; // general functions
 
-// function to check if HD Quiz is active
+// function to check if ICN Academy is active
 function hdq_exists()
 {
     return;
@@ -54,7 +54,7 @@ function hdq_add_shortcode($atts)
     include plugin_dir_path(__FILE__) . './includes/template.php';
     return ob_get_clean();
 }
-add_shortcode('HDquiz', 'hdq_add_shortcode');
+add_shortcode('ICN', 'hdq_add_shortcode');
 
 
 /* Add Gutenberg block
@@ -119,18 +119,18 @@ function hdq_disable_redirect_canonical($redirect_url)
 }
 add_filter('redirect_canonical', 'hdq_disable_redirect_canonical');
 
-/* Create HD Quiz Settings page
+/* Create ICN Academy Settings page
 ------------------------------------------------------- */
 function hdq_create_settings_page()
 {
     if (hdq_user_permission()) {
         function hdq_register_quizzes_page()
         {
-            add_menu_page('HD Quiz', 'HD Quiz', 'publish_posts', 'hdq_quizzes', 'hdq_register_quizzes_page_callback', 'dashicons-clipboard', 5);
-            add_menu_page('HD Quiz Addons', 'HDQ Addons', 'edit_posts', 'hdq_addons', 'hdq_register_addons_page_callbak', '', 99);
-            add_menu_page('HD Quiz Tools', 'HDQ Tools', 'edit_posts', 'hdq_tools', 'hdq_register_tools_page_callbak', '', 99);
-            add_menu_page('HD Quiz Tools - CSV Importer', 'HDQ Tools CSV', 'edit_posts', 'hdq_tools_csv_importer', 'hdq_register_tools_csv_importer_page_callback', '', 99);
-            add_menu_page('HD Quiz Tools - Data Upgrade', 'HDQ Tools DATA', 'edit_posts', 'hdq_tools_data_upgrade', 'hdq_register_tools__data_upgrade_page_callback', '', 99);
+            add_menu_page('ICN Academy', 'ICN Academy', 'publish_posts', 'hdq_quizzes', 'hdq_register_quizzes_page_callback', 'dashicons-welcome-learn-more', 5);
+            add_menu_page('ICN Academy Addons', 'HDQ Addons', 'edit_posts', 'hdq_addons', 'hdq_register_addons_page_callbak', '', 99);
+            add_menu_page('ICN Academy Tools', 'HDQ Tools', 'edit_posts', 'hdq_tools', 'hdq_register_tools_page_callbak', '', 99);
+            add_menu_page('ICN Academy Tools - CSV Importer', 'HDQ Tools CSV', 'edit_posts', 'hdq_tools_csv_importer', 'hdq_register_tools_csv_importer_page_callback', '', 99);
+            add_menu_page('ICN Academy Tools - Data Upgrade', 'HDQ Tools DATA', 'edit_posts', 'hdq_tools_data_upgrade', 'hdq_register_tools__data_upgrade_page_callback', '', 99);
             remove_menu_page('hdq_addons');
             remove_menu_page('hdq_tools');
             remove_menu_page('hdq_tools_csv_importer');
@@ -149,7 +149,7 @@ function hdq_create_settings_page()
                 }
             }
             add_submenu_page('hdq_quizzes', 'Quizzes', 'Quizzes', 'publish_posts', 'hdq_quizzes', 'hdq_register_quizzes_page_callback');
-            add_submenu_page('hdq_quizzes', 'HD Quiz About', 'About / Options', 'publish_posts', 'hdq_options', 'hdq_register_settings_page_callback');
+            add_submenu_page('hdq_quizzes', 'ICN Academy About', 'About / Options', 'publish_posts', 'hdq_options', 'hdq_register_settings_page_callback');
             add_submenu_page('hdq_quizzes', 'Addons', 'Addons' . $addon_text, 'manage_options', 'admin.php?page=hdq_addons');
             add_submenu_page('hdq_quizzes', 'Tools', 'Tools', 'manage_options', 'admin.php?page=hdq_tools');
         }
@@ -176,7 +176,7 @@ function hdq_create_settings_page()
         {
 ?>
             <div class='notice notice-success is-dismissible'>
-                <p><strong>HD QUIZ</strong>. Thank you for installing the latest version of HD Quiz. If you experience any issues at all, please don't hesitate to <a href="https://wordpress.org/support/plugin/hd-quiz" target="_blank">reach out for support</a>! I'm always glad to help when I can.</p>
+                <p><strong>ICN Academy</strong>. Thank you for installing the latest version of ICN Academy. If you experience any issues at all, please don't hesitate to <a href="https://wordpress.org/support/plugin/hd-quiz" target="_blank">reach out for support</a>! I'm always glad to help when I can.</p>
             </div>
 <?php
         }

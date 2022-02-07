@@ -5,7 +5,7 @@
 require dirname(__FILE__) . '/tools/data_upgrade.php';
 require dirname(__FILE__) . '/tools/csv_import.php';
 
-// Register HD Quiz pages
+// Register ICN Academy pages
 function hdq_register_quizzes_page_callback()
 {
     require dirname(__FILE__) . '/hdq_quizzes.php';
@@ -26,7 +26,7 @@ function hdq_register_tools_page_callbak()
     require dirname(__FILE__) . '/tools.php';
 }
 
-// Get image ID (for *super* old HD Quiz users image as answer)
+// Get image ID (for *super* old ICN Academy users image as answer)
 // taken from https://wpscholar.com/blog/get-attachment-id-from-wp-image-url/
 // great work Micah! This is super elegant
 function hdq_get_attachment_id($url)
@@ -734,7 +734,7 @@ function hdq_get_results($quiz_settings)
 
         <?php
         if (isset($settings["hd_qu_heart"]["value"]) && $settings["hd_qu_heart"]["value"][0] === "yes") {
-            echo '<p class = "hdq_heart">HD Quiz powered by <a href = "https://harmonicdesign.ca" target = "_blank" title = "Best WordPress Developers">harmonic design</a></p>';
+            echo '<p class = "hdq_heart">ICN Academy powered by <a href = "https://harmonicdesign.ca" target = "_blank" title = "Best WordPress Developers">harmonic design</a></p>';
         }
         ?>
 
@@ -789,7 +789,7 @@ function hdq_print_question_featured_image($question)
     }
 }
 
-// This should be depricated starting HD Quiz 1.9
+// This should be depricated starting ICN Academy 1.9
 function hdq_get_answer_image_url($image)
 {
     if (is_numeric($image)) {

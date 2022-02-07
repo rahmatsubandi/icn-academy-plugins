@@ -32,7 +32,7 @@ function hdq_load_quiz_tabs()
     </div>
 
 <p>
-	Quiz Shortcode: <span class = "hdq_tooltip_code"><code title = "click to copy to clipboard" class = "hdq_shortcode_copy">[HDquiz quiz = "<?php echo $quizID; ?>"]</code><span class="hdq_tooltip_content">
+	Quiz Shortcode: <span class = "hdq_tooltip_code"><code title = "click to copy to clipboard" class = "hdq_shortcode_copy">[ICN quiz = "<?php echo $quizID; ?>"]</code><span class="hdq_tooltip_content">
         <span>click to copy shortcode</span>
     </span></span> <br/><small>You can copy / paste that shortcode (remember to paste without formatting!) onto any post or page to display this quiz or use the built-in Gutenberg block.</small>
 </p>
@@ -156,7 +156,7 @@ $args = array(
 				<div id="hdq_logo">
 					<span class="hdq_logo_tooltip"><img src="<?php echo plugins_url('../images/hd-logo.png', __FILE__); ?>" alt = "Harmonic Design logo">
 						<span class="hdq_logo_tooltip_content">
-                        <span><strong>HD Quiz</strong> is developed by Harmonic Design. Check out the addons page to see how you can extend HD Quiz even further.</span>
+                        <span><strong>ICN Academy</strong> is developed by Harmonic Design. Check out the addons page to see how you can extend ICN Academy even further.</span>
                     	</span>
 					</span>
 				</div>

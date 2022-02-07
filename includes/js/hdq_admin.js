@@ -481,7 +481,7 @@ const HDQ = {
 							}
 
 							data.quiz = decodeURIComponent(data.quiz);
-							let html = `<div role="button" class="hdq_quiz_item hdq_quiz_term" data-name="${data.quiz}" data-id="${data.id}">${data.quiz}<code>[HDquiz quiz = "${data.id}"]</code></div>`;
+							let html = `<div role="button" class="hdq_quiz_item hdq_quiz_term" data-name="${data.quiz}" data-id="${data.id}">${data.quiz}<code>[ICN quiz = "${data.id}"]</code></div>`;
 							// force a more smooth loading integration
 							if (HDQ.vars.loadTimer > 1000) {
 								HDQ.EL.page.quizzes.insertAdjacentHTML("beforeend", html);

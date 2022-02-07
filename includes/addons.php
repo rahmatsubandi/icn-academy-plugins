@@ -29,7 +29,7 @@ update_option("hdq_new_addon", array("no", $today)); // reset since we have seen
 <div id="main" style="max-width: 800px; background: #f3f3f3; border: 1px solid #ddd; margin-top: 2rem">
     <div id="header">
         <h1 id="heading_title" style="margin-top:0">
-            HD Quiz - Addons
+            ICN Academy - Addons
         </h1>
     </div>
 
@@ -90,7 +90,7 @@ update_option("hdq_new_addon", array("no", $today)); // reset since we have seen
 												<?php
                                                     echo $title;
                                     if ($verified == "verified") {
-                                        echo '<span class = "hdq_verified hdq_tooltip hdq_tooltip_question">verified<span class="hdq_tooltip_content"><span>This plugin has either been developed by the author of HD Quiz or has been audited by the developer.<br/><small>please note that Harmonic Design cannot guarantee that third party plugins for HD Quiz are risk free and secure after verification.</small></span></span></span>';
+                                        echo '<span class = "hdq_verified hdq_tooltip hdq_tooltip_question">verified<span class="hdq_tooltip_content"><span>This plugin has either been developed by the author of ICN Academy or has been audited by the developer.<br/><small>please note that Harmonic Design cannot guarantee that third party plugins for ICN Academy are risk free and secure after verification.</small></span></span></span>';
                                     } ?> <span class = "hdq_price"><?php echo esc_html($price); ?></span></h2>
 											<h4 class = "hdq_addon_author">
 												developed by: <?php echo esc_html($author); ?>
